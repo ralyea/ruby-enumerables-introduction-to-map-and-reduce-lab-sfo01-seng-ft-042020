@@ -11,5 +11,6 @@ def map_to_double(source_array)
 (source_array).map { |i| i*2 }
 end
 
-
-([1, 2, 3, -9]).map { |i| i*i }
+def map_to_square(source_array)
+(source_array).map { |i| i*i }
+end
