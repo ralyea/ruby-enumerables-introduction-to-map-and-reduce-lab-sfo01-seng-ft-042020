@@ -1,7 +1,6 @@
 # My Code here....
 def map_to_negativize(source_array)
-new_array = (source_array).map { |i| -i }
-puts new_array
+(source_array).map { |i| -i }
 end
 
 
