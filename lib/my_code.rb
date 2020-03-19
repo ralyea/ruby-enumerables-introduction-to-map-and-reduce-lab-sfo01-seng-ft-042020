@@ -1,5 +1,5 @@
 # My Code here....
-map_to_negativize(source_array)
+def map_to_negativize(source_array)
 new_array = (source_array).map { |i| -i }
 end
 puts new_array
