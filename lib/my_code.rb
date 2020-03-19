@@ -15,8 +15,13 @@ def map_to_square(source_array)
 (source_array).map { |i| i*i }
 end
 
-def reduce_to_total(source_array, starting_point)
-  
+def reduce_to_total(source_array, starting_point=0)
+  if starting_point != 0 
+    array.reduce(starting_point){|x,y| yield x,y} 
+  else 
+    array.reduce{|x,y| yield x,y}
+  end
+end
   
 def reduce_to_all_true(source_array)
 
