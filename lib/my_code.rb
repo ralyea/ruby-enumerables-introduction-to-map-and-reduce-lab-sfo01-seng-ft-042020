@@ -17,7 +17,7 @@ end
 
 def reduce_to_total(source_array, starting_point=0)
   if starting_point != 0 
-    array.reduce(starting_point){|x,y| yield x,y} 
+    array.reduce(starting_point){|x,y| :+ } 
   else 
     array.reduce{|x,y| yield x,y}
   end
